@@ -31,7 +31,7 @@ console.log(productosArrays)
 
 
 while (seguirComprando === true) {
-    totalCompra = totalCompra + pantalon.productosArrays[producto-1].price
+    totalCompra = totalCompra + productosArrays[producto-1].price
   
 
   decision = parseInt(prompt('Quieres seguir comprando? 1.Si - 2.No'))
