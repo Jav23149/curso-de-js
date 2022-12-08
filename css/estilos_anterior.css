@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Kufi+Arabic:400');
+
+*{ 
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+/* Estilos propios de Header */
+
+.crear__cuenta  a {
+  font-size: 2vh;
+  font-family: 'Noto Kufi Arabic';
+  color: rgb(0, 0, 0);
+}
+
+  .navbar{
+    background-color: skyblue;
+    
+  }
+  .navbar a{
+    font-family:'Noto Kufi Arabic';
+    font-size: 3vh;
+    color: black;
+  }
+
+/* Estilos propios del Main Principal*/
+
+
+.video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  filter:brightness(80%);
+  }
+
+  .carousel {
+    margin-bottom: 4rem;  
+    
+  }
+  
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  
+  }
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width:100%;
+    height: 32rem;
+   
+  }
+  .cover{
+    object-fit: cover;
+  }
+
+.main__link__imagenes img {
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;}
+
+.thumbnail { 
+  position: relative;
+}
+ 
+ 
+ .caption { 
+  position: absolute; 
+  top: 45%; 
+  left: 0; 
+  width: 100%; 
+ } 
+ .caption a {
+color:  #111E1E;
+text-decoration: none;
+font-size: 6vh;
+font-family: 'Staatliches';
+
+ }
+ .main__titulo{
+  background-color: skyblue;
+  
+ } 
+ .main__titulo h3{
+  font-family: 'Noto Kufi Arabic';
+  color: black;
+}
+.main__videos video{
+  height: 300px;
+  width: 200px;
+}
+
+/* Estilos propios de Footer*/
+.footer{
+  font-family:'Noto Kufi Arabic';
+  color: black;
+  background-color: skyblue;
+  height: auto;
+}
+                                          
+.pieDePagina__navegacion__medios img {
+  height: 5vh;
+  margin-top: 4vh;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+}
+.pieDePagina__navegacion h4{
+  text-align: center;
+  font-family:'Noto Kufi Arabic';
+}
+.pieDePagina__navegacion__contactanos p{
+  font-family:'Noto Kufi Arabic'
+}
+.pieDePagina__redesSociales {
+                                                    
+  position: fixed;
+   bottom: 0%;
+  right: 0%;
+ }                                                
+ .pieDePagina__redesSociales img{
+  height: 10vh;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+}                                                 
+.derechos{
+  height: 5vh;
+  background-color: rgb(4, 68, 93); 
+  font-family:'Noto Kufi Arabic';
+  color: black;
+ 
+}
+
+/* Transiciones*/
+
+ .hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 576px){
+  .crear__cuenta {
+    font-size: 0,5vh;}
+    .divVideo{
+   
+      position: fixed;
+      min-width: 280;
+      min-height: 653;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+      filter:brightness(50%);
+    
+    }
+  }
+  
+@media screen and (max-width: 576px){
+  .pieDePagina__navegacion__links{
+    padding-bottom:  4vh;
+    border-bottom:solid 1px #111E1E;}
+  }
+  @media screen and (max-width: 576px){
+    .medios__pagos {
+      padding-bottom:  4vh;
+      border-bottom: solid 1px #111E1E;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+  .pieDePagina__navegacion__links {
+    text-align: center;
+  }
+}
+
+
+/* Estilos propios de Main de la pagina Como comprar*/
+.main_comprar {
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  .main_comprar {
+    font-size: 2vh;
+    
+  }
+}
+.main_contactos{
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+  color: black;
+}
+.formularios input{
+  width:90vh;
+  height: 6vh;
+}
+.formularios textarea{
+  width:90vh;
+}
+.botones{
+  width: 50px;
+}
+@media screen and (max-width: 576px) {
+  .formularios input{
+    width:50vh;
+    height: 6vh;
+  }
+  .formularios textarea{
+    width:50vh;
+  }
+  .botones{
+    width: 60px;
+  }
+}
+.main_preguntas{
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+  color: black;
+  line-height: 6vh;
+}
+.tarjetas img {
+  width: 8vh;
+  text-align: right;
+
+}
+@media screen and (max-width: 576px) {
+  .main_preguntas {
+    font-size: 2vh;
+    line-height: 4vh;}
+  }
+  .productos-img h3{
+    color: #000000;
+    font-family:'Noto Kufi Arabic';
+    font-size: 6vh;
+
+  }
+ .productos-img a {
+  text-decoration: none;
+  color: #000000;
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+ }
+ .productos-img img{
+  border:solid 2px #000000;
+ }

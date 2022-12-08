@@ -1,0 +1,23 @@
+.body{
+    .main_preguntas{
+      font-family:$tipografia-general;
+      font-size:map-get( $medidas ,medida-secundario);
+      color: $color-tipografia-principal;
+      
+      .tarjetas img {
+        width: map-get( $medidas , medida-novena);
+        text-align: right;
+      
+      }
+    }
+    }
+    
+
+
+@media screen and (max-width: 576px) {
+    .body{ .main_preguntas {
+       font-size:map-get( $medidas , medida-principal );
+       line-height: map-get( $medidas ,medida-tercera);
+      }
+     }
+   }

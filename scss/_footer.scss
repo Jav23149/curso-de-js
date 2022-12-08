@@ -1,0 +1,69 @@
+.footer{
+    .pie{
+      font-family:$tipografia-general;
+      color:$color-tipografia-principal;
+      background-color: $fondo-principal;
+      height: auto;
+    
+      .pieDePagina__navegacion h4{
+        text-align: center;
+        font-family:$tipografia-general;
+      }
+      .pieDePagina__navegacion__medios img {
+        height:map-get( $medidas ,medida-cuarta);
+        margin-top: map-get( $medidas ,medida-tercera);
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px $color-tipografia-principal;
+      }
+      
+      .pieDePagina__navegacion__contactanos p{
+        font-family:$tipografia-general;
+      }
+    }
+                                             
+    .pieDePagina__redesSociales {                                                 
+      position: fixed;
+       bottom: 0%;
+       right: 0%;                                             
+     .pieDePagina__redesSociales img{
+      height: map-get( $medidas ,medida-decima);
+      border-radius:  map-get( $medidas ,medida-octava);
+      box-shadow: 5px 8px 12px $color-tipografia-principal;
+    }               
+    }
+    .derechos{
+      height:map-get( $medidas ,medida-cuarta);
+      background-color: rgb(4, 68, 93); 
+      font-family:$tipografia-general;
+      color:$color-tipografia-principal;
+    }   
+    } 
+  
+    @media screen and (max-width: 576px){
+
+      .footer{
+        .pieDePagina__redesSociales{
+           .pieDePagina__redesSociales img{
+            height: map-get( $medidas ,medida-quinta);
+            border-radius: 20px;
+            box-shadow: 5px 8px 12px $color-tipografia-principal;
+          }
+        }
+      }
+
+  }
+    @media screen and (max-width: 576px){
+        .footer{
+        .pie{
+        .pieDePagina__navegacion__links{
+          padding-bottom:map-get( $medidas ,medida-tercera);
+          border-bottom:solid 1px $color-tipografia-principal;
+          text-align: center;}
+          .medios__pagos {
+            padding-bottom:map-get( $medidas ,medida-tercera);
+            border-bottom: solid 1px$color-tipografia-principal;
+          } 
+        }
+      
+      }
+    }

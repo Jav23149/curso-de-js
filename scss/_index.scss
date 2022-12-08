@@ -1,0 +1,86 @@
+.body{
+    font-family:$tipografia-general; }
+
+
+    .video {
+        @include video;
+        min-width: 100%;
+        min-height: 100%;
+       
+        }
+
+    .main_index{
+        .primera_seccion{
+          .carousel {
+            margin-bottom: 4rem; 
+            .carousel-caption {
+              bottom: 3rem;
+              z-index: 10;
+            }
+            .carousel-inner{
+                 .carousel-item{
+                  height: 32rem;
+                 }
+                 .carousel-item > img {
+                  position: absolute;
+                   top: 0;
+                    left: 0;
+                    min-width:100%;
+                    height: 32rem;
+                }
+                .cover{
+                  object-fit: cover;
+                }
+            }
+          }
+        }
+        .main__link__imagenes{
+          .main__link__imagenes{
+            .thumbnail {
+              position: relative;
+               .thumbnail img{
+                border-radius: 20px;
+                box-shadow: 5px 8px 12px $color-tipografia-principal;
+               }
+              .caption{
+                position: absolute; 
+                      top: 45%; 
+                      left: 0; 
+                      width: 100%;}
+                .caption a{
+                   color:  #2f6e6a;
+                    text-decoration: none;
+                   font-size: 6vh;
+                  font-family:$tipografia-general;
+                }
+              }
+            }
+          }
+        .main__titulo{
+          background-color: $fondo-principal;
+          .main__titulo h3{
+            font-family: $tipografia-general;
+            color:$color-tipografia-principal;
+          }   
+         } 
+       
+        .main__videos{   
+        .main__videos video{
+          height: 300px;
+          width: 200px;
+        }
+      }
+    }        
+      
+    @media screen and (max-width: 576px){
+  
+     .video{
+      @include video;
+      min-width: 280;
+      min-height: 653;
+        
+     }
+      
+   }
+        
+      

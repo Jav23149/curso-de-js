@@ -1,0 +1,17 @@
+.body{
+    .main_comprar {
+      font-family:$tipografia-general;
+      font-size: map-get( $medidas , medida-secundario);
+      color:$color-tipografia-principal;
+    }
+    }
+     
+
+@media screen and (max-width: 576px) {
+    .body{
+      .main_comprar {
+      font-size:map-get( $medidas , medida-principal );
+      
+    }
+  }
+  }

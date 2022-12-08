@@ -1,0 +1,29 @@
+.body{
+  .main_contactos{
+    font-family:$tipografia-general;
+    font-size: map-get( $medidas ,medida-secundario);
+    color:$color-tipografia-principal;
+    .formulario{
+      .btn{
+        background-color:$fondo-principal;
+      }
+    }
+    .mapa iframe {
+        width: 400px;
+        height: 500px;
+      }
+
+    } 
+  }
+
+@media screen and (max-width: 576px){
+.body{
+  .main_contactos{
+    .mapa iframe{
+      width: 300px;
+      height: 300px;
+    }
+
+  }
+}
+}

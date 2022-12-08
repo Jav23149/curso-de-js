@@ -1,0 +1,21 @@
+.header{
+    .first__seccion {
+      .crear__cuenta  a {
+        font-size: map-get( $medidas , medida-principal );
+        font-family: $tipografia-general;
+        color:$color-tipografia-principal;
+      }  
+    } 
+   .second_section{
+    
+      .navbar{
+        background-color:$fondo-principal;
+        .a{
+          font-family:$tipografia-general;
+          font-size: map-get( $medidas ,medida-secundario);
+          color: $color-tipografia-principal;
+        }
+      }
+    }
+  }
+ 
